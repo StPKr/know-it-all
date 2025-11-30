@@ -1,23 +1,17 @@
+import Footer from "./components/footer/Footer";
+import Header from "./components/header/Header";
+import Main from "./components/main content/Main";
+
 export default function App() {
   return (
     <div className="landing-container">
-      {/* Header */}
-      <header>
-        <h1 className="heading">Welcome to My Landing Page</h1>
-        <p className="subheading">
-          This is a simple starting point for a React + Vite + Tailwind project.
-        </p>
-      </header>
+      <Header />
 
-      {/* Call-to-action button */}
-      <a href="#" className="cta-button">
-        Get Started
-      </a>
+      <main className="flex-1">
+        <Main />
+      </main>
 
-      {/* Footer */}
-      <footer className="footer">
-        &copy; 2025 My Company. All rights reserved.
-      </footer>
+      <Footer />
     </div>
   );
 }
